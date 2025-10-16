@@ -1,0 +1,9 @@
+.venv/
+venv/
+.vscode/
+.pytest_cache/
+__pycache__
+.csv
+dev-lion-tour-scraper-key.json
+flight_data.json.json
+flight_data.json
