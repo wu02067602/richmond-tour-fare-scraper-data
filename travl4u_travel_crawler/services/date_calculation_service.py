@@ -134,7 +134,7 @@ class DateCalculationService:
         Raises:
             ValueError: 當參數驗證失敗時
         """
-        if month_offset < 0:
+        if month_offset <= 0:
             raise ValueError(f"month_offset 必須為正整數，目前值為 {month_offset}")
         
         if not 1 <= dep_day <= 31:
