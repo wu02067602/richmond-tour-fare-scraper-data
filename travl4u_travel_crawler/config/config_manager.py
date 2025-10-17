@@ -162,3 +162,15 @@ class ConfigManager:
             raise ValueError("配置尚未加載，請先呼叫load_config方法")
 
         return self.config.get('date_calculation_api', {})
+    
+    def get_holiday_calculation_api_config(self) -> dict:
+        """
+        獲取節日日期計算 API 配置
+
+        返回:
+            dict: 節日日期計算 API 配置字典
+        """
+        if not self.config:
+            raise ValueError("配置尚未加載，請先呼叫load_config方法")
+
+        return self.config.get('holiday_calculation_api', {})

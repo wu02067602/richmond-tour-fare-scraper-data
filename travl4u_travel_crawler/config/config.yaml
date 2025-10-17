@@ -38,6 +38,13 @@ date_calculation_api:
   # 請求超時時間（秒）
   timeout: 10
 
+# 節日日期計算 API 配置
+holiday_calculation_api:
+  # 節日日期計算 API 端點 URL
+  endpoint_url: "http://localhost:8000/calculate_holiday_dates"
+  # 請求超時時間（秒）
+  timeout: 10
+
 # 重試策略
 retry:
   # 最大重試次數
