@@ -31,6 +31,13 @@ api:
     transactionID: "test-transaction"
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
 
+# 日期計算 API 配置
+date_calculation_api:
+  # 日期計算 API 端點 URL
+  endpoint_url: "http://localhost:8000/calculate_dates"
+  # 請求超時時間（秒）
+  timeout: 10
+
 # 重試策略
 retry:
   # 最大重試次數

@@ -150,3 +150,15 @@ class ConfigManager:
             raise ValueError("配置尚未加載，請先呼叫load_config方法")
 
         return self.config.get('flight_tasks_holidays', [])
+    
+    def get_date_calculation_api_config(self) -> dict:
+        """
+        獲取日期計算 API 配置
+
+        返回:
+            dict: 日期計算 API 配置字典
+        """
+        if not self.config:
+            raise ValueError("配置尚未加載，請先呼叫load_config方法")
+
+        return self.config.get('date_calculation_api', {})
